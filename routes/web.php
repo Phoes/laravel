@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/home', function () {
+	$name = "beer";
+    /*return view('index',compact('name'));*/
+
+    return view('index')->with('name',$name)
+                        ->with('coe',"CoE");
+});
+Route::get('/hll', function () {
+    return view('hello')->with('name',"Phoes Bunto");
+});
