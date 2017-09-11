@@ -24,3 +24,11 @@ Route::get('/home', function () {
 Route::get('/hll', function () {
     return view('hello')->with('name',"Phoes Bunto");
 });
+Route::get('/hll', function () {
+	return view('hello')->with('name',"Phoes Bunto");
+
+});
+Route::get('/beer', 'HomeController@index');
+Route::get('/mm', 'HomeController@hello');
+Route::post('/home', 'HomeController@report');
+
